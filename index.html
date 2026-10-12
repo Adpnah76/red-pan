@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red PAN | Fundamentos de Redes de Computadoras</title>
+
+    <style>
+        /* 1. Estilos generales de toda la página */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f4f7;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* 2. Encabezado */
+        header {
+            background-color: #17365d;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        header p {
+            margin: 8px 0 0;
+        }
+
+        /* 3. Contenido principal */
+        main {
+            width: 90%;
+            max-width: 1000px;
+            margin: 25px auto;
+        }
+
+        section {
+            background-color: white;
+            margin-bottom: 22px;
+            padding: 24px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: #17365d;
+            margin-top: 0;
+            border-bottom: 2px solid #d7e3f2;
+            padding-bottom: 8px;
+        }
+
+        /* 4. Datos del trabajo */
+        .datos p {
+            margin: 8px 0;
+        }
+
+        /* 5. Tarjetas de integrantes */
+        .integrantes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        .integrante {
+            border: 1px solid #d9dee7;
+            border-radius: 8px;
+            padding: 18px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .integrante img {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #d7e3f2;
+            background-color: #e8edf4;
+        }
+
+        .integrante h3 {
+            color: #17365d;
+            margin: 12px 0 6px;
+            font-size: 1.05rem;
+        }
+
+        .integrante p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        /* 6. Pie de página */
+        footer {
+            background-color: #17365d;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            margin-top: 30px;
+        }
+
+        /* 7. Ajustes para pantallas pequeñas */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            main {
+                width: 94%;
+            }
+
+            section {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Red PAN</h1>
+        <p>Fundamentos de Redes de Computadoras</p>
+    </header>
+
+    <main>
+        <section class="datos">
+            <h2>Datos académicos</h2>
+            <p><strong>Universidad:</strong> Universidad Autónoma Metropolitana, Unidad Azcapotzalco</p>
+            <p><strong>Materia:</strong> Fundamentos de Redes de Computadoras</p>
+            <p><strong>Profesor:</strong> Cesar Benavides Álvarez</p>
+            <p><strong>Proyecto:</strong> Red PAN</p>
+            <p><strong>Grupo:</strong> CEL- 01 </p>
+            <p><strong>Fecha de entrega:</strong> 12/10/2026 </p>
+        </section>
+
+        <section>
+            <h2>Integrantes del equipo</h2>
+            <p>Conoce a los integrantes del equipo y lee una breve semblanza de cada uno.</p>
+
+            <div class="integrantes">
+                <article class="integrante">
+                    <!-- Cambia WhatsApp Image 2026-10-12 at 11.51.53 AM.jpeg -->
+                    <img src="WhatsApp Image 2026-10-12 at 11.51.53 AM.jpeg">
+                    <h3>Ariel Emilio Hernández Ortega</h3>
+                    <p>Estudiante de Ingeniería en Computación con interés en el funcionamiento de las redes de computadoras y el intercambio de información. En formación en el estudio de los modelos OSI y TCP/IP, análisis de protocolos de comunicación, segmentación de subredes y medios de transmisión física e inalámbrica.</p>
+                </article>
+
+                <article class="integrante">
+                    <!-- Cambia WhatsApp Image 2026-10-12 at 11.51.52 AM (2).jpeg -->
+                    <img src="WhatsApp Image 2026-10-12 at 11.51.52 AM (2).jpeg">
+                    <h3>Adrián Barrientos Nava</h3>
+                    <p>Soy estudiante de ingeniería electrónica. Me gusta aprender como funcionan las cosas. Descrubrir el funcionamiento de los sistemas de comunicación y los sistemas embebidos.</p>
+                </article>
+
+                <article class="integrante">
+                    <!-- Cambia WhatsApp Image 2026-10-12 at 11.51.52 AM.jpeg -->
+                    <img src="WhatsApp Image 2026-10-12 at 11.51.52 AM.jpeg">
+                    <h3>Gabriela Hernández Torres</h3>
+                    <p>Estudiante de Ingeniería en Electrónica. Enfocado en el aprendizaje de la materia Fundamentos de Redes y en el estudio de interconexión inalámbrica mediante redes PAN y Bluetooth.</p>
+                </article>
+
+                <article class="integrante">
+                    <!-- Cambia WhatsApp Image 2026-10-12 at 11.51.52 AM (1).jpeg -->
+                    <img src="WhatsApp Image 2026-10-12 at 11.51.52 AM (1).jpeg">
+                    <h3>Bryan Aldahir Martínes Martínez</h3>
+                    <p>Estudiante de Ingeniería en Electrónica con interés en el funcionamiento de los sistemas de comunicación y la transmisión de datos. En formación en el análisis de protocolos de comunicación, conectividad entre dispositivos y aplicaciones de las tecnologías inalámbricas en entornos electrónicos.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Universidad Autónoma Metropolitana, Unidad Azcapotzalco</p>
+        <p>Proyecto escolar: Red PAN</p>
+    </footer>
+</body>
+</html>
